@@ -1,0 +1,12 @@
+#Pretend that the following line is in my crontab
+#0 0 * * * ~/init/scripts/04
+#If I wanted to put it in from here, I would use: echo "$^" > /etc/crontab
+
+chk="sum"
+sum=`md5sum /etc/crontab | awk '{print $1}'`
+read -r line<$chk
+if [$line != $sum]
+then
+    echo "$sum" | mail -s "crontab modified" root
+fi
+echo "$sum">sum
