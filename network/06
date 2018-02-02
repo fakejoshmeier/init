@@ -1,0 +1,4 @@
+cd to /etc, cat resolv.conf, and if you want to get fancy, pipe the cat output
+into grep "nameserver" | awk '{print $2}' and you'll get only the DNS ip.
+That's /etc/resolv.conf, but apparently, if you flush the dns, that info will
+no longer be relevant.
