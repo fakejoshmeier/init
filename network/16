@@ -1,3 +1,3 @@
-I ask the bocal to do it for me, because I can't edit /etc/hosts.  If I could, I
-run "echo "46.19.122.85 	intra.42.fr" >> /etc/hosts," and then because I have
+I ask the bocal to do it for me, because I can't edit /etc/hosts.  If I could,
+I run "echo "46.19.122.85 intra.42.fr" >> /etc/hosts," and then because I have
 sudo rights, I get into all sorts of shenanigans.

@@ -1,6 +1,2 @@
-Running 10, the output is en0.  Running ifconfig with en0 gives me all of the
-relevant information, and anyone with a brain would be good from there, but
-we're not talking about brain people.  So pipe ifconfig en0 into grep "inet " to
-find the IP with other info.  If that still is too much data for you, pipe that
-into awk "{print $2}", and you'll be left wtih the IP.
-The device is en0 and the IP is 10.113.4.25
+echo "I use grep "nat".  This gives me the NAT address, which is where the link
+is made."

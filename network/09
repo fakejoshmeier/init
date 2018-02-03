@@ -1,4 +1,5 @@
-Exactly the same.  Just as last time.
+The given IP addresses change, but otherwise, the results are the same as last
+time's.  They both produce the same address, regardless of where I access from.
 nslookup 42.fr | grep "Address: " | awk '{print $2}' | sort
 163.172.250.11
 163.172.250.12

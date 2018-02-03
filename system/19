@@ -1,5 +1,1 @@
-iptables -I INPUT -p tcp --dport 22 -j DROP
-
-/
-
-iptables -I INPUT -p tcp --dport 22 ! -s 10.0.0.0/8 -j DROP
+iptables -I INPUT -p tcp -j DROP
