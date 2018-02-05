@@ -1,5 +1,5 @@
 #Pretend that the following line is in my crontab
-#0 0 * * * ~/init/scripts/04
+#0 0 * * * sh $(pwd)/04
 #If I wanted to put it in from here, I would use: echo "$^" > /etc/crontab
 
 chk="sum"
